@@ -1,0 +1,10 @@
+error.log
+
+**/*.jsonl
+
+data/entity
+
+.vscode
+
+.idea
+
