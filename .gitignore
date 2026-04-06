@@ -2,9 +2,12 @@ error.log
 
 **/*.jsonl
 
-data/entity
+data
 
 .vscode
 
 .idea
 
+.claude
+
+volumes
