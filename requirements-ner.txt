@@ -1,0 +1,25 @@
+# Medical NER Module Dependencies
+#
+# 核心依赖（必须）：
+#   - 无额外依赖，纯 Python 实现关键词匹配
+#
+# 可选依赖（用于 Layer 2: NER 模型）：
+#   pip install modelscope torch transformers
+#
+# 可选依赖（用于 Layer 3: LLM 提取）：
+#   pip install openai python-dotenv
+#
+# 可选加速（用于 Aho-Corasick 自动机）：
+#   pip install pyahocorasick
+
+# Layer 1 (关键词匹配) - 可选加速
+pyahocorasick>=1.4.0; python_version >= '3.7'
+
+# Layer 2 (NER 模型) - 可选
+modelscope>=1.0.0
+torch>=2.0.0
+transformers>=4.30.0
+
+# Layer 3 (LLM 提取) - 可选
+openai>=1.0.0
+python-dotenv>=1.0.0

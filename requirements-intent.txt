@@ -1,0 +1,17 @@
+
+# Medical Intent Classification Module Dependencies
+# ==============================================
+#
+# 意图识别模块依赖
+#
+# 核心依赖（关键词匹配）：
+#   - 无额外依赖，纯 Python 实现
+#
+# 完整依赖（关键词匹配 + 模型分类）：
+#   pip install -r requirements-intent.txt
+#
+
+# Layer 2 (文本分类模型) - 必需
+torch>=2.0.0
+transformers>=4.30.0
+
